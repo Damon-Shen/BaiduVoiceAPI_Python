@@ -4,6 +4,7 @@
 调用方法
 
 VoiceTranslation =  BaiduVoiceTranslationAPI.BaiduVoiceHttpClient(apiKey,secretKey)
+
 VoiceRespone = VoiceTranslation.VocieTranslation(Language,Channel,audioFile,Format,Rate)
 
 print VoiceRespone
