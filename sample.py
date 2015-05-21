@@ -19,7 +19,7 @@ if (not apiKey or not secretKey):
     print 'Key Empty'
     sys.exit(0)
     
-# 开始录音
+#开始录音
 Record = RecordAPI.RecordSub(Channel,Rate,Chunk,Record_secounds,audioFile)
 
 #录音完成
