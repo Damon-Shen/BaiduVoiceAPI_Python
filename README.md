@@ -1,0 +1,2 @@
+# BaiduVoiceAPI_Python
+百度语音API的Python版，目前仅支持语音解析
