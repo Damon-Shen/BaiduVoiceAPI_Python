@@ -33,7 +33,7 @@ class BaiduVoiceHttpClient():
     def VocieTranslation(self,Language,Channel,audioFile,Format,Rate):
 
         Token = self.__getToken();
-        cuid = Token[Token.index("-")+1:];
+        cuid = Token[Token.index("-") + 1:];
         API_url = "http://vop.baidu.com/server_api";
         
         audioFileLen = os.path.getsize(audioFile);
