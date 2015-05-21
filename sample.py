@@ -6,7 +6,7 @@ import sys
  
 apiKey = ""                             #这里输入自己的key
 secretKey = ""                          #这里输入自己的secretKey
-audioFile = sys.path[0] + '\\Translation.wav'  				#生成并解析的语音路径+文件名 默认在当前程序所在目录
+audioFile = sys.path[0] + '/Translation.wav'  				#生成并解析的语音路径+文件名 默认在当前程序所在目录
 Language = "zh"                         			        #默认zh 支持中文(zh) 英文(en) 粤语(ct)                         					 		
 Rate = 16000                          				        #采样率，支持8000和16000
 Channel = 1                             			        #声道，目前baidu只支持单声道
@@ -35,3 +35,4 @@ else:
     print Record
 
 
+https://github.com/Damon-Shen/BaiduVoiceAPI_Python.git
