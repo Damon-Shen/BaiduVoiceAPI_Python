@@ -16,13 +16,14 @@
 import pyaudio
 import wave
 
-def RecordSub(Channels, Rate, Chunk, Record_seconds, FileName):
+def RecordSub(Channels, Rate, Chunk, Input_device, Record_seconds, FileName):
         try:   
                 p = pyaudio.PyAudio()
 
                 stream = p.open(format = pyaudio.paInt16,
                         channels = Channels,
                         rate = Rate,
+                        input_device = Input_device
                         input = True,
                         frames_per_buffer = Chunk)
 
