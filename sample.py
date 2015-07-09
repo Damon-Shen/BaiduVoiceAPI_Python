@@ -13,6 +13,7 @@ Channel = 1                             			        #声道，目前baidu只支�
 Format = 'wav'                                              #语音格式，支持wav pcm opus speex amr x-flac
 Chunk = 1024                                                #录音块长度
 Record_secounds = 5                                         #录音时长，单位:秒
+Input_device = 1
 
 
 if (not apiKey or not secretKey):
@@ -20,7 +21,7 @@ if (not apiKey or not secretKey):
     sys.exit(0)
     
 #开始录音
-Record = RecordAPI.RecordSub(Channel,Rate,Chunk,Record_secounds,audioFile)
+Record = RecordAPI.RecordSub(Channel,Rate,Chunk,Input_device,Record_secounds,audioFile)
 
 #录音完成
 if (Record == 'done'):
